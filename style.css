@@ -13,7 +13,7 @@ main{
     background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 90px 220px 500px 250px 200px 80px 400px 400px 250px 300px 250px;
+    grid-template-rows: 90px 220px 500px 250px 550px 270px 700px 400px 250px 300px 250px;
     padding: 0px 12px;
     grid-template-areas: "header header header header"
                          "article article article article"
@@ -114,7 +114,9 @@ article{
 #section1>#section1-div{
     height: 100%;
     background-color: red;
-    background-image: url(https://i.pinimg.com/1200x/29/8a/4d/298a4dd7865add740eb6eab743f7e669.jpg);
+    background-image: url(https://i.pinimg.com/1200x/07/35/8c/07358c35f03691279cc221fc3eacaee1.jpg);
+    background-size: cover;
+    background-position: center;
     border-radius: 25px;
 }
 
@@ -178,21 +180,90 @@ article{
     font-weight: 400;
     color: rgba(0, 0, 0, 0.329);
 }
+
 #section3{
-    background-color: hotpink;
+    background-color: rgba(134, 134, 134, 0.048);
     grid-area: section3;
-
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
 }
+#section3-1{
+    width: 40%;
+}
+#section3-1 h2{
+    width: 24%;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 8px 20px;
+    color: rgba(0, 0, 0, 0.658);
+}
+#section3-1 h3{
+    margin-top: 160px;
+    width: 90%;
+    font-size: 35px;
+    font-weight: 500;
+}
+#section3-1 p{
+    margin-top: 40px;
+    width: 110%;
+    font-size: 20px;
+    font-weight: 500;
+}
+#section3-2{
+    width: 50%;
+    background-image: url(https://i.pinimg.com/736x/21/b4/ab/21b4ab52c126bc44e424213366bda745.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
 #section4{
-    background-color: blue;
+    background-color: rgba(95, 95, 95, 0.062);
     grid-area: section4;
-
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    gap: 140px;
 }
+#section4-1{
+    width: 40%;
+}
+#section4-1 h2{
+    width: 22%;
+    padding: 8px 17px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.849);
+    color: rgba(0, 0, 0, 0.733);
+}
+#section4-1 h1{
+    font-size: 35px;
+    margin-top: 20px;
+}
+#section4-2{
+    width: 50%;
+}
+#section4-2 p{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.473);
+    margin-top: 60px;
+}
+
 #section5{
     background-color: blueviolet;
     grid-area: section5;
-
+    display: flex;
+    gap: 10px;
 }
+.section5-1{
+    background-color: red;
+    height: 270px;
+    width: 200px;
+}
+
 #section6{
     background-color: brown;
     grid-area: section6;
