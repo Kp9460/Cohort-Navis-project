@@ -13,7 +13,7 @@ main{
     background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 90px 220px 500px 250px 550px 270px 850px 800px 700px 700px 250px;
+    grid-template-rows: 90px 250px 500px 250px 550px 270px 850px 800px 700px 700px 530px;
     padding: 0px 12px;
     grid-template-areas: "header header header header"
                          "article article article article"
@@ -33,12 +33,25 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 60px;
+    padding: 0px 50px;
+}
+header #header-first{
+    height: 40%;
+    width: 12%;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#header-first img{
+    width: 105%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 header #header-middle{
     display: flex;
-    gap: 20px;
+    gap: 35px;
     cursor: pointer;
+    margin-left: 80px;
 }
 #header-middle h5{
     font-size: 15px;
@@ -87,24 +100,28 @@ article{
     line-height: 25px;
 }
 #article-button{
-    padding: 20px 0px;
+    padding: 25px 0px;
 }
 #article-button1{
     border: 1px solid royalblue;
     background-color: royalblue;
     color: white;
     margin-right: 10px;
-    padding: 13px 20px;                                                                      
+    padding: 17px 25px;                                                                      
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
 }
 #article-button2{
     border: 1px solid royalblue;
     background-color: #fff;
     color: royalblue;
     border-radius: 30px;
-    padding: 13px 20px;
-    font-size: 18px;
+    padding: 17px 25px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
 }
 
 
@@ -474,8 +491,14 @@ article{
     align-items: center;
     justify-content: space-between;
 }
-#part1-1 h1{
+#part1-1 #part1-1-0{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#part1-1-0 h1{
     font-size: 22px;
+    font-weight: 700;
     letter-spacing: -1px;
 }
 #part1-1-1 i{
@@ -496,7 +519,7 @@ article{
 .part1 span{
     position: absolute;
     left: 20%;
-    bottom: 15%;
+    bottom: 49px;
     margin-top: 13vh;
     font-size: 20px;
     font-weight: 500;
@@ -577,9 +600,112 @@ article{
     border-radius: 30px;
 }
 
-
-
 footer{
-    background-color: olivedrab;
+    background-color: rgba(0, 0, 0, 0.877);
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 65% 35%;
+    padding: 60px 50px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    grid-template-areas: "footer1 footer2"
+                         "footer3 footer3";
+}
+.footer1{
+    /* background-color: red; */
+    grid-area: footer1;
+}
+.footer1 #logo{
+    width: 36%;
+    height: 16%;
+    position: relative;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+#logo .logo-name{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: 31%;
+    top: 10%;
+}
+.footer1 h1{
+    margin-top: 5vh;
+    font-size: 27px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    color: white;
+}
+.footer1 input{
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-top: 20px;
+    border: 1px solid rgba(58, 58, 58, 0.918);
+}
+#input1{
+    background-color: rgba(58, 58, 58, 0.918);
+    color: white; 
+}
+#input2{
+    background-color: royalblue;
+    cursor: pointer;
+    color: white; 
+}
+#input2:hover{
+    background-color: rgb(67, 103, 221);
+    color: white;
+    transform: scale(1.05);
+}
+.footer2{
+    /* background-color: rgb(117, 105, 105); */
+    grid-area: footer2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer2 h3{
+    font-size: 17px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.836);
+    padding-top: 60px;
+}
+.footer2 h4{
+    font-size: 15px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.836);
+    padding-top: 19px;
+}
+.footer3{
+    /* background-color: rgb(228, 111, 111); */
+    grid-area: footer3;
+    color: rgba(255, 255, 255, 0.795);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+#footer3-part1{
+    display: flex;
+    align-items: center;
+}
+#footer3-part1 i{
+    font-size: 21px;
+}
+#footer3-part1 h2{
+    font-size: 16px;
+}
+#footer3-part2 h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+#footer3-part3 i{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.137);
+    border-radius: 50%;
+    margin-left: 10px;
 }
